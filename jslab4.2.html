@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+   h1 {color:red;text-align:center;}
+   body {background-color:PaleGreen; font-weight:bold;}
+   input {font-weight:bold;}
+</style>
+<script>
+	function skazka()
+	{
+		var name=document.getElementById('name');
+		var hobby=document.getElementById('hobby');
+		var friend=document.getElementById('friend');
+		var present=document.getElementById('present');
+		
+	    name1=name.value;
+	    hobby1=hobby.value;
+	    friend1=friend.value;
+	    present1=present.value;
+			
+		var win=window.open("","","width=400,height=500");
+		win.document.open();	
+		
+		win.document.write("<h1>пташка и цветы</h1><hr>");
+			
+		win.document.write("В одном лесу жила маленькая " + name1 + ", которая очень любила " + hobby1 + " чудесные песни. У нее так хорошо получалось, что вес лес собирался послушать ее! " +
+		"От сороки она узнала, что у людей принять дарить " + present1 + " любимым исполнителям. А " + 
+		present1 + " она любила так же сильно, как и петь. Долго грустила " + name1 +
+		". Но, однажды, после очередного импровизированного концерта, " + friend1 + " подлетел к " + name1 +
+		" и подарил ей... " + present1 + "!	Уж он то был истинным джентельменом! " + name1 + " была невероятно счастлива!!!<br>");
+			
+			
+		str ='<input type="button" value="Закрыть"'+'onClick="window.close();">';
+		win.document.write(str);
+		win.document.close();
+	}
+</script>
+</head>
+<body>
+	<h1>Генератор сказок</h1><hr>
+	<table>
+		<tr>
+			<td>Имя героя:</td>
+			<td><input type=text value="пташка" id="name"/></td>
+		</tr>
+		<tr>
+			<td>Любимое занятие:</td>
+			<td><input type=text value="петь" id="hobby"/></td>
+		</tr>
+		<tr>
+			<td>Друг героя:</td>
+			<td><input type=text value="дятел" id="friend"/></td>
+		</tr>
+		<tr>
+			<td>Любимый подарок:</td>
+			<td><input type=text value="цветы" id="present"/></td>
+		</tr>
+
+	</table>
+<input type=button value="Сгенерировать сказку" OnClick="skazka()">
+<hr>
+</body>
+</html>
