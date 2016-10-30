@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
+   <meta charset="utf-8">
 <style>
    h1 {color:red;text-align:center;}
    body {background-color:PaleGreen; font-weight:bold;}
@@ -27,54 +29,54 @@
 	  var win=window.open("","","width=400,height=500");
       win.document.open();
 
-	  var str = "<h1>О себе</h1><hr><P>";
+	  var str = "<h1>ГЋ Г±ГҐГЎГҐ</h1><hr><P>";
 
 	  win.document.write(str);
-	  var s = "<h4>Я,"+fam1+" "+name1+" "+otch1+" родился в "+year1+" году в городе "+place1+"</h4>"
+	  var s = "<h4>Гџ,"+fam1+" "+name1+" "+otch1+" Г°Г®Г¤ГЁГ«Г±Гї Гў "+year1+" ГЈГ®Г¤Гі Гў ГЈГ®Г°Г®Г¤ГҐ "+place1+"</h4>"
 
-	  var e = "<h4>Больше всего я люблю "+lz1+" и очень не люблю "+nlz1+".Было бы замечательно, всю жизнь только "+lz1+",но к сожалению приходится иногда "+nlz1+"</h4>"
+	  var e = "<h4>ГЃГ®Г«ГјГёГҐ ГўГ±ГҐГЈГ® Гї Г«ГѕГЎГ«Гѕ "+lz1+" ГЁ Г®Г·ГҐГ­Гј Г­ГҐ Г«ГѕГЎГ«Гѕ "+nlz1+".ГЃГ»Г«Г® ГЎГ» Г§Г Г¬ГҐГ·Г ГІГҐГ«ГјГ­Г®, ГўГ±Гѕ Г¦ГЁГ§Г­Гј ГІГ®Г«ГјГЄГ® "+lz1+",Г­Г® ГЄ Г±Г®Г¦Г Г«ГҐГ­ГЁГѕ ГЇГ°ГЁГµГ®Г¤ГЁГІГ±Гї ГЁГ­Г®ГЈГ¤Г  "+nlz1+"</h4>"
 	  win.document.write(s,e);
 
-	  str ='<input type="button" value="закрыть"'+'onClick="window.close();">';
+	  str ='<input type="button" value="Г§Г ГЄГ°Г»ГІГј"'+'onClick="window.close();">';
 	  win.document.write(str);
 	  win.document.close();
 	}
 </script>
 </head>
 <body>
-   <h1>Анкета</h1>
+   <h1>ГЂГ­ГЄГҐГІГ </h1>
    <hr>
    <table>
 		<tr>
-			<td>Фамилия:</td>
-			<td><input type=text value="Горбунков" id="fam"/></td>
+			<td>Г”Г Г¬ГЁГ«ГЁГї:</td>
+			<td><input type=text value="ГѓГ®Г°ГЎГіГ­ГЄГ®Гў" id="fam"/></td>
 		</tr>
 		<tr>
-			<td>Имя:</td>
-			<td><input type=text value="Семен" id="name"/></td>
+			<td>Г€Г¬Гї:</td>
+			<td><input type=text value="Г‘ГҐГ¬ГҐГ­" id="name"/></td>
 		</tr>
 		<tr>
-			<td>Отчество:</td>
-			<td><input type=text value="Семенович" id="otch"/></td>
+			<td>ГЋГІГ·ГҐГ±ГІГўГ®:</td>
+			<td><input type=text value="Г‘ГҐГ¬ГҐГ­Г®ГўГЁГ·" id="otch"/></td>
 		</tr>
 		<tr>
-			<td>Год рождения:</td>
+			<td>ГѓГ®Г¤ Г°Г®Г¦Г¤ГҐГ­ГЁГї:</td>
 			<td><input type=text value="1990" id="year"/></td>
 		</tr>
 		<tr>
-			<td>Место рождения:</td>
-			<td><input type=text value="Одесса" id="place"/></td>
+			<td>ГЊГҐГ±ГІГ® Г°Г®Г¦Г¤ГҐГ­ГЁГї:</td>
+			<td><input type=text value="ГЋГ¤ГҐГ±Г±Г " id="place"/></td>
 		</tr>
 		<tr>
-			<td>Любимое занятие:</td>
-			<td><input type=text value="читать" id="lz"/></td>
+			<td>Г‹ГѕГЎГЁГ¬Г®ГҐ Г§Г Г­ГїГІГЁГҐ:</td>
+			<td><input type=text value="Г·ГЁГІГ ГІГј" id="lz"/></td>
 		</tr>
 		<tr>
-			<td>Нелюбимое занятие:</td>
-			<td><input type=text value="мыть посуду" id="nlz"/></td>
+			<td>ГЌГҐГ«ГѕГЎГЁГ¬Г®ГҐ Г§Г Г­ГїГІГЁГҐ:</td>
+			<td><input type=text value="Г¬Г»ГІГј ГЇГ®Г±ГіГ¤Гі" id="nlz"/></td>
 		</tr>
 	</table>
-<input type=button value="Сформировать биографию" OnClick="biography()">
+<input type=button value="Г‘ГґГ®Г°Г¬ГЁГ°Г®ГўГ ГІГј ГЎГЁГ®ГЈГ°Г ГґГЁГѕ" OnClick="biography()">
 	<hr>
 </body>
 </html>
