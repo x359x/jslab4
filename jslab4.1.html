@@ -29,54 +29,54 @@
 	  var win=window.open("","","width=400,height=500");
       win.document.open();
 
-	  var str = "<h1>Î ñåáå</h1><hr><P>";
+	  var str = "<h1>О себе</h1><hr><P>";
 
 	  win.document.write(str);
-	  var s = "<h4>ß,"+fam1+" "+name1+" "+otch1+" ðîäèëñÿ â "+year1+" ãîäó â ãîðîäå "+place1+"</h4>"
+	  var s = "<h4>Я,"+fam1+" "+name1+" "+otch1+" родился в "+year1+" году в городе "+place1+"</h4>"
 
-	  var e = "<h4>Áîëüøå âñåãî ÿ ëþáëþ "+lz1+" è î÷åíü íå ëþáëþ "+nlz1+".Áûëî áû çàìå÷àòåëüíî, âñþ æèçíü òîëüêî "+lz1+",íî ê ñîæàëåíèþ ïðèõîäèòñÿ èíîãäà "+nlz1+"</h4>"
+	  var e = "<h4>Больше всего я люблю "+lz1+" и очень не люблю "+nlz1+".Было бы замечательно, всю жизнь только "+lz1+",но к сожалению приходится иногда "+nlz1+"</h4>"
 	  win.document.write(s,e);
 
-	  str ='<input type="button" value="çàêðûòü"'+'onClick="window.close();">';
+	  str ='<input type="button" value="закрыть"'+'onClick="window.close();">';
 	  win.document.write(str);
 	  win.document.close();
 	}
 </script>
 </head>
 <body>
-   <h1>Àíêåòà</h1>
+   <h1>Анкета</h1>
    <hr>
    <table>
 		<tr>
-			<td>Ôàìèëèÿ:</td>
-			<td><input type=text value="Ãîðáóíêîâ" id="fam"/></td>
+			<td>Фамилия:</td>
+			<td><input type=text value="Горбунков" id="fam"/></td>
 		</tr>
 		<tr>
-			<td>Èìÿ:</td>
-			<td><input type=text value="Ñåìåí" id="name"/></td>
+			<td>Имя:</td>
+			<td><input type=text value="Семен" id="name"/></td>
 		</tr>
 		<tr>
-			<td>Îò÷åñòâî:</td>
-			<td><input type=text value="Ñåìåíîâè÷" id="otch"/></td>
+			<td>Отчество:</td>
+			<td><input type=text value="Семенович" id="otch"/></td>
 		</tr>
 		<tr>
-			<td>Ãîä ðîæäåíèÿ:</td>
+			<td>Год рождения:</td>
 			<td><input type=text value="1990" id="year"/></td>
 		</tr>
 		<tr>
-			<td>Ìåñòî ðîæäåíèÿ:</td>
-			<td><input type=text value="Îäåññà" id="place"/></td>
+			<td>Место рождения:</td>
+			<td><input type=text value="Одесса" id="place"/></td>
 		</tr>
 		<tr>
-			<td>Ëþáèìîå çàíÿòèå:</td>
-			<td><input type=text value="÷èòàòü" id="lz"/></td>
+			<td>Любимое занятие:</td>
+			<td><input type=text value="читать" id="lz"/></td>
 		</tr>
 		<tr>
-			<td>Íåëþáèìîå çàíÿòèå:</td>
-			<td><input type=text value="ìûòü ïîñóäó" id="nlz"/></td>
+			<td>Нелюбимое занятие:</td>
+			<td><input type=text value="мыть посуду" id="nlz"/></td>
 		</tr>
 	</table>
-<input type=button value="Ñôîðìèðîâàòü áèîãðàôèþ" OnClick="biography()">
+<input type=button value="Сформировать биографию" OnClick="biography()">
 	<hr>
 </body>
 </html>
